@@ -37,12 +37,12 @@
 
 
 
-
+            <div class="#e0e0e0 grey lighten-2">
 
                     <form action="controllers/ControlLogin.php" method="POST">
 
 
-                        <div class="#e0e0e0 grey lighten-2">
+                        <div class="card-content">
 
                           
 
@@ -99,6 +99,8 @@
                     <p class="center">
                     <a href="info.php">Informacion de los creadores!!</a>
                     </p>
+                </div>
+
                 </div>
 
             </div>
