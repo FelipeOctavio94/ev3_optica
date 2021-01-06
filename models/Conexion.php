@@ -8,7 +8,7 @@ class Conexion{
   
 
    public static $user="uztr3qegaslj6dbl";
-    public static $pass="uztr3qegaslj6dbl";
+    public static $pass="KSpgzwde7MLhasQiThm9";
     public static $URL="mysql:host=bydpm6mshiwchkaygi24-mysql.services.clever-cloud.com;dbname=bydpm6mshiwchkaygi24";
 
 

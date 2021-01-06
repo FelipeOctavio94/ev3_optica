@@ -42,9 +42,6 @@
                     <form action="controllers/ControlLogin.php" method="POST">
 
 
-
-
-
                         <div class="card-content">
 
                           

@@ -107,9 +107,6 @@ class ExportarPDF
                         <p>Fecha de entrega : ' . $receta['fecha_entrega'] . '</p>
                         <p>Nombre del vendedor: ' . $receta['nombre_vendedor'] . '</p>
 
-                                
-
-
                         </div>
 
                         <hr>
@@ -117,8 +114,6 @@ class ExportarPDF
                             <div class="col l6 m6 s12">
 
                             <h4>Datos del lente</h4>
-
-
 
                                 <p>Tipo de lente: ' . $receta['tipo_lente'] . '</p>
                                 <p>Tipo de cristal: ' . $receta['tipo_cristal'] . '</p>
@@ -130,7 +125,6 @@ class ExportarPDF
                                 <p>Base: '.$receta['base'].'</p>
                                 <p>Distancia pupilar: '.$receta['distancia_pupilar'].'</p>
                             
-
 
                             </div>
 
