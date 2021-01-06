@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body background="img/fondo4.jpg">
 
 
 
