@@ -28,8 +28,7 @@
                         <div class="center card-image">
                             <img src="img/lentes.png">
                         </div>
-                        <h4 class="center black-text">Acceda a su cuenta</h4> 
-                        <br>                   
+                                         
             </div>
 
 
@@ -38,6 +37,8 @@
 
 
             <div class="#e0e0e0 grey lighten-2">
+            <h4 class="center black-text">Acceda a su cuenta</h4> 
+                        <br> 
 
                     <form action="controllers/ControlLogin.php" method="POST">
 
