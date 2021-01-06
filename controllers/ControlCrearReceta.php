@@ -108,10 +108,10 @@ class ControlCrearReceta{
             if ($this->prisma != "") {
                 if (is_numeric($this->prisma)) {
                     if ($this->prisma < 1 || $this->prisma > 5 ) {
-                        $mensaje["msg2"] = "Ingrese un valor entre 1 y 5";   
+                        $mensaje["msg2"] = "Ingrese un valor para prisma entre 1 y 5";   
                     }
                 } else {                
-                    $mensaje["msg2"] = "el valor debe ser numerico";
+                    $mensaje["msg2"] = "el valor de prisma debe ser numerico";
                 }
             } else {
                 $this->base = "";
@@ -119,64 +119,64 @@ class ControlCrearReceta{
             
             if (is_numeric($this->distancia_pupilar)) {
                 if ($this->distancia_pupilar < 40 || $this->distancia_pupilar > 75){
-                    $mensaje["msg3"] ="El valor debe ser entre 40 y 75";
+                    $mensaje["msg3"] ="El valor de distacia pupilar debe ser entre 40 y 75";
                 }
             }
              else {
-                $mensaje["msg3"] ="El valor debe ser numerica";
+                $mensaje["msg3"] ="El valor de distacia pupilar debe ser numerica";
             }
 
             if (is_numeric($this->esfera_oi)) {
                 if ($this->esfera_oi < -99 || $this->esfera_oi > 99){
-                    array_push($mensaje, "msg4", "El valor debe tener maximo 2 digitos");
+                    array_push($mensaje, "msg4", "El valor de esfera izquierda debe tener maximo 2 digitos");
                 }
             } else {
-                $mensaje["msg4"] ="El valor debe ser numerico";
+                $mensaje["msg4"] ="El valor de esfera izquierda debe ser numerico";
             } 
 
             if (is_numeric($this->esfera_od)) {
                 if ($this->esfera_od < -99 || $this->esfera_od > 99){
-                    $mensaje["msg5"] ="El valor debe tener maximo 2 digitos";
+                    $mensaje["msg5"] ="El valor de la esfera derecha debe tener maximo 2 digitos";
                 }            
             } else {
-                $mensaje["msg5"] ="El valor debe ser numerico";
+                $mensaje["msg5"] ="El valor de la esfera derecha debe ser numerico";
             }
 
             if (is_numeric($this->cilindro_oi)) {
                 if ($this->cilindro_oi < -99 || $this->cilindro_oi > 99){
-                    $mensaje["msg6"] ="El valor debe tener maximo 2 digitos";
+                    $mensaje["msg6"] ="El valor de el cilindro izquierdo debe tener maximo 2 digitos";
                 }
             } else {
-                $mensaje["msg6"] ="El valor debe ser numerico";
+                $mensaje["msg6"] ="El valor de el cilindro izquierdo debe ser numerico";
             }
 
             if (is_numeric($this->cilindro_od)) {
                 if ($this->cilindro_od < -99 || $this->cilindro_od > 99){
-                    $mensaje["msg7"] ="El valor debe tener maximo 2 digitos";
+                    $mensaje["msg7"] ="El valor de el cilindro derecho debe tener maximo 2 digitos";
                 }
             } else {
-                $mensaje["ms7"] ="el valor debe ser numerico";
+                $mensaje["ms7"] ="el valor de el cilindro derecho debe ser numerico";
             }
 
             if (is_numeric($this->eje_od)) {
                 if ($this->eje_od < 1|| $this->eje_od > 180){
-                    $mensaje["msg8"] ="El valor debe ser entre 1 y 180 grados";
+                    $mensaje["msg8"] ="El valor del eje derecho debe ser entre 1 y 180 grados";
                 }               
             } else {
-                $mensaje["msg8"] ="El valor debe ser numerico";
+                $mensaje["msg8"] ="El valor del eje derecho debe ser numerico";
             }
 
             if (is_numeric($this->eje_oi)) {
                 if ($this->eje_oi < 1|| $this->eje_oi > 180){
-                    $mensaje["msg3"] ="El valor debe ser entre 1 y 180 grados";
+                    $mensaje["msg3"] ="El valor del eje izquierdo debe ser entre 1 y 180 grados";
                 }               
             } else {
-                $mensaje["msg9"] ="El valor debe ser numerico";
+                $mensaje["msg9"] ="El valor del eje izquierdo debe ser numerico";
             }
 
             if (is_numeric($this->valor_lente)) {
                 if ($this->valor_lente < 0|| $this->valor_lente > 999999999){
-                    $mensaje["msg10"] ="El valor maximo permitido es de 999.999.999";
+                    $mensaje["msg10"] ="El precio maximo permitido es de 999.999.999";
                 }               
             } else {
                 $mensaje["msg10"] ="El precio debe ser numerico";
