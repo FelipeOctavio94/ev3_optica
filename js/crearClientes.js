@@ -3,8 +3,7 @@ new Vue({
     el:'#creacionDeClientes',
 
     data:{
-
-        url:'https://optica1500project.herokuapp.com/',
+        url:'https://ev3-optica.herokuapp.com/',
         respuesta:[],
         rut:'',
         nombre:'',
@@ -42,7 +41,7 @@ new Vue({
                 const data = await resp.json();
                 for (i in data) {
                     M.toast({html: data[i]})
-                    if (data["msg"] == "Cliente creado exitosamente") {
+                    if (data["msg"] == "Cliente creado con exito") {
                         this.rut= ""; 
                         this.nombre= ""; 
                         this.direccion= ""; 

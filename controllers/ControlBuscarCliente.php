@@ -4,11 +4,6 @@ namespace controllers;
 
 use models\Cliente as Cliente;
 
-
-/*header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');*/
-
 require_once("../models/Cliente.php");
 
 class BusquedaCliente{
@@ -22,7 +17,7 @@ class BusquedaCliente{
     public function buscar(){
 
         if ($this->rut == "") {
-            $mensaje = ["msg"=>"ingrese rut cliente"];
+            $mensaje = ["msg"=>"Ingrese rut del cliente"];
             echo json_encode($mensaje);
             return;
         }
@@ -33,7 +28,7 @@ class BusquedaCliente{
 
         if (count($arreglo)) {
             $arr = $arreglo[0];
-            $arr["msg"] = "Usuario encontrado!";
+            $arr["msg"] = "Cliente encontrado";
             echo json_encode($arr); 
 
         } else {

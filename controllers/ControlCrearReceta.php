@@ -8,10 +8,6 @@ use models\Receta as Receta;
 require_once("../models/Receta.php");
 
 
-/*header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');*/
-
 class ControlCrearReceta{
 
     public $tipo_lente;
@@ -93,9 +89,8 @@ class ControlCrearReceta{
                 "nombremedico"=>$this->nombre_medico,
                 "rutusuario"=>$this->rut_usuario];
 
-        //aqui empiezan las validacions
         if ($this->rut_cliente == ""){
-            $mensaje = ["msg"=>"ingrese un rut valido"];
+            $mensaje = ["msg"=>"Ingrese un rut valido"];
             echo json_encode($mensaje);
             return;
         }
@@ -104,7 +99,7 @@ class ControlCrearReceta{
         || $this->esfera_oi == "" || $this->esfera_od == "" || $this->cilindro_oi == "" || $this->cilindro_od == "" || $this->eje_oi == ""
          || $this->eje_od == "" || $this->rut_medico == "" || $this->nombre_medico == "" || $this->fecha_entrega =="" || $this->fecha_retiro == "" || $this->valor_lente == "") {
 
-            $mensaje = ["msg"=>"complete los campos obligatorios"];
+            $mensaje = ["msg"=>"complete los campos son obligatorios"];
 
             
             echo json_encode($mensaje);
@@ -113,10 +108,10 @@ class ControlCrearReceta{
             if ($this->prisma != "") {
                 if (is_numeric($this->prisma)) {
                     if ($this->prisma < 1 || $this->prisma > 5 ) {
-                        $mensaje["msg2"] = "el valor del prisma debe ser entre 1 y 5";   
+                        $mensaje["msg2"] = "Ingrese un valor entre 1 y 5";   
                     }
                 } else {                
-                    $mensaje["msg2"] = "el valor del prisma debe ser numerico";
+                    $mensaje["msg2"] = "el valor debe ser numerico";
                 }
             } else {
                 $this->base = "";
@@ -124,71 +119,71 @@ class ControlCrearReceta{
             
             if (is_numeric($this->distancia_pupilar)) {
                 if ($this->distancia_pupilar < 40 || $this->distancia_pupilar > 75){
-                    $mensaje["msg3"] ="la distancia pupilar debe ser entre 40 y 75";
+                    $mensaje["msg3"] ="El valor debe ser entre 40 y 75";
                 }
             }
              else {
-                $mensaje["msg3"] ="la distancia pupilar debe ser numerica";
+                $mensaje["msg3"] ="El valor debe ser numerica";
             }
 
             if (is_numeric($this->esfera_oi)) {
                 if ($this->esfera_oi < -99 || $this->esfera_oi > 99){
-                    array_push($mensaje, "msg4", "la dificultad visual (esfera isquierda) debe tener maximo 2 digitos");
+                    array_push($mensaje, "msg4", "El valor debe tener maximo 2 digitos");
                 }
             } else {
-                $mensaje["msg4"] ="el valor de la esfera isquierda debe ser numerico";
+                $mensaje["msg4"] ="El valor debe ser numerico";
             } 
 
             if (is_numeric($this->esfera_od)) {
                 if ($this->esfera_od < -99 || $this->esfera_od > 99){
-                    $mensaje["msg5"] ="la dificultad visual (esfera derecha) debe tener maximo 2 digitos";
+                    $mensaje["msg5"] ="El valor debe tener maximo 2 digitos";
                 }            
             } else {
-                $mensaje["msg5"] ="el valor de la esfera derecha debe ser numerico";
+                $mensaje["msg5"] ="El valor debe ser numerico";
             }
 
             if (is_numeric($this->cilindro_oi)) {
                 if ($this->cilindro_oi < -99 || $this->cilindro_oi > 99){
-                    $mensaje["msg6"] ="el cilindro isquierdo debe tener maximo 2 digitos";
+                    $mensaje["msg6"] ="El valor debe tener maximo 2 digitos";
                 }
             } else {
-                $mensaje["msg6"] ="el valor del cilindro isquierdo debe ser numerico";
+                $mensaje["msg6"] ="El valor debe ser numerico";
             }
 
             if (is_numeric($this->cilindro_od)) {
                 if ($this->cilindro_od < -99 || $this->cilindro_od > 99){
-                    $mensaje["msg7"] ="el cilindro derecho debe tener maximo 2 digitos";
+                    $mensaje["msg7"] ="El valor debe tener maximo 2 digitos";
                 }
             } else {
-                $mensaje["ms7"] ="el valor del cilindro derecho debe ser numerico";
+                $mensaje["ms7"] ="el valor debe ser numerico";
             }
 
             if (is_numeric($this->eje_od)) {
                 if ($this->eje_od < 1|| $this->eje_od > 180){
-                    $mensaje["msg8"] ="el angulo del eje derecho debe ser entre 1 y 180 grados";
+                    $mensaje["msg8"] ="El valor debe ser entre 1 y 180 grados";
                 }               
             } else {
-                $mensaje["msg8"] ="el angulo del eje derecho debe ser numerico";
+                $mensaje["msg8"] ="El valor debe ser numerico";
             }
 
             if (is_numeric($this->eje_oi)) {
                 if ($this->eje_oi < 1|| $this->eje_oi > 180){
-                    $mensaje["msg3"] ="el angulo del eje isquierdo debe ser entre 1 y 180 grados";
+                    $mensaje["msg3"] ="El valor debe ser entre 1 y 180 grados";
                 }               
             } else {
-                $mensaje["msg9"] ="el angulo del eje isquierdo debe ser numerico";
+                $mensaje["msg9"] ="El valor debe ser numerico";
             }
 
             if (is_numeric($this->valor_lente)) {
                 if ($this->valor_lente < 0|| $this->valor_lente > 999999999){
-                    $mensaje["msg10"] ="el valor maximo es de 999.999.999";
+                    $mensaje["msg10"] ="El valor maximo permitido es de 999.999.999";
                 }               
             } else {
-                $mensaje["msg10"] ="el precio debe ser numerico";
+                $mensaje["msg10"] ="El precio debe ser numerico";
             }
 
             if (strlen($this->observacion) > 1000 ){
-                $mensaje["msg11"] ="observacion demasiado larga, maximo 1000 caracteres";
+                $mensaje["msg11"] ="La observacion debe de tener un maximo de 1000 caracteres";
             }  
 
 
@@ -201,10 +196,10 @@ class ControlCrearReceta{
 
             $count = $model->insertarReceta($data);
             if ($count == 1) {
-                $mensaje = ["msg"=>"receta creada"];
+                $mensaje = ["msg"=>"Receta creada con exito"];
                 echo json_encode($mensaje);
             } else {
-                $mensaje = ["msg"=>"no se ha podido generar la receta"];
+                $mensaje = ["msg"=>"ERROR!! No se ha podido crear la receta"];
                 echo json_encode($mensaje);
                 
                 
@@ -212,7 +207,7 @@ class ControlCrearReceta{
             }
         }
         } else {
-            $mensaje = ["msg"=>"session no iniciada"];
+            $mensaje = ["msg"=>"Session no iniciada"];
             echo json_encode($mensaje);
         }
 

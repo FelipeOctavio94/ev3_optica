@@ -1,8 +1,7 @@
 new Vue({
     el: "#formularioreceta",
     data: {
-      //url:'https://optica1500project.herokuapp.com/',
-      url:'https://optica1500project.herokuapp.com/',
+      url:'https://ev3-optica.herokuapp.com/',
       materiales: [],
       tipos: [],
       armazones: [],
@@ -101,7 +100,7 @@ new Vue({
           const data = await res.json();
             for (i in data) {
               M.toast({html: data[i]})
-              if (data["msg"] == "receta creada") {
+              if (data["msg"] == "Receta creada con exito") {
                 this.tipo_lentes = ""; 
                 this.i_esfera = "";
                 this.d_esfera = "";
@@ -123,10 +122,10 @@ new Vue({
             }                       
           } catch (error) {
               console.log(error);
-              M.toast({html: 'hubo un error'})
+              M.toast({html: 'ERROR!!'})
           }  
         } else {
-          M.toast({html: 'seleccione un cliente valido'})
+          M.toast({html: 'Seleccione un cliente valido'})
         }
 
       },

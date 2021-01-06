@@ -37,7 +37,7 @@ class ControlCliente
         if (isset($_SESSION['user'])) {
             if ($this->rut == "" || $this->nombre == "" || $this->direccion == "" || $this->telefono == "" || $this->fecha == "" || $this->email == "") {
 
-                $mensaje = ["msg" => "Hay campos vacíos en el formulario. Rellene los campos"];
+                $mensaje = ["msg" => "Hay campos vacíos. Rellene los campos por favor"];
             } else {
 
                 $model = new Cliente();
@@ -51,10 +51,10 @@ class ControlCliente
 
                 if ($count == 1) {
 
-                    $mensaje = ["msg" => "Cliente creado exitosamente"];
+                    $mensaje = ["msg" => "Cliente creado con exito"];
                 } else {
 
-                    $mensaje = ["msg" => "Hubo un error en la base de datos, verifica los datos e intenta nuevamente"];
+                    $mensaje = ["msg" => "ERROR!!, verifica los datos e intente nuevamente"];
                 }
             }
 
@@ -62,7 +62,7 @@ class ControlCliente
 
         }else{
 
-            $mensaje = ["msg"=> "No tienes nada que hacer aqui muchachon"];
+            $mensaje = ["msg"=> "No tienes opermisos para estar aqui"];
             echo json_encode($mensaje);
 
         }

@@ -3,8 +3,7 @@ new Vue({
     el:'#buscarRut',
 
     data:{
-        //http://localhost/opticaProyect/
-        url:'https://optica1500project.herokuapp.com/',
+        url:'https://ev3-optica.herokuapp.com/',
         receteexiste: false ,
         rut:'',
         fecha:'',
@@ -31,7 +30,7 @@ new Vue({
                 
 
                 if(this.rut==""){
-                    M.toast({html: 'Ingrese un rut'})
+                    M.toast({html: 'Ingrese rut'})
 
                 }else{
 
@@ -51,11 +50,11 @@ new Vue({
                     if(data==0){
 
                         
-                        M.toast({html: 'Busqueda finalizada sin resultados'})
+                        M.toast({html: 'Busqueda sin resultados'})
                         this.receteexiste = false;
                     }else{
 
-                        M.toast({html: '¡Busqueda finalizada con exito! cantidad de recetas: '+cantidad})
+                        M.toast({html: '¡Busqueda finalizada con exito!! cantidad de recetas: '+cantidad})
                         this.receteexiste = true;
                     }
                 }
@@ -109,11 +108,11 @@ new Vue({
                     if(data==0){
 
                         
-                        M.toast({html: 'Busqueda finalizada sin resultados'})
+                        M.toast({html: 'Busqueda sin resultados'})
                         this.receteexiste = false;
                     }else{
 
-                        M.toast({html: '¡Busqueda finalizada con exito! cantidad de recetas: '+cantidad})
+                        M.toast({html: '¡Busqueda finalizada con exito!! cantidad de recetas: '+cantidad})
                         this.receteexiste = true;
                     }
 

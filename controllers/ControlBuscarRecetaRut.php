@@ -18,10 +18,6 @@ class ControlBuscarRecetaRut{
         $this->rut = $_POST['rut'];
         
     }
-
-
-    
-
     
     public function buscarRecetasPorRut(){
 
@@ -36,16 +32,10 @@ class ControlBuscarRecetaRut{
 
         }else{
 
-            echo json_encode(["msg"=>"No tienes nada que hacer aqui"]);
-
-
+            echo json_encode(["msg"=>"No tienes permisos para estar aqui"]);
         }
         
-
-
     }
-
-
 
 }
 

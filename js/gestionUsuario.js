@@ -1,7 +1,7 @@
 new Vue ({
     el:'#gestionusuario',
     data:{
-        url:'https://optica1500project.herokuapp.com/',
+        url:'https://ev3-optica.herokuapp.com/',
         usuarios: [],
         estados:[
         { nombre: 'BLOQUEADO', value: '0' },

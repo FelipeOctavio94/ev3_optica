@@ -27,12 +27,11 @@ class ControlEditarUsuario{
 
     }
 
-    //edita las tablas de un usuario, segun la maqueta el rut tambien se puede modificar por eso quedo una copia del original llamado "original"
     public function actualizarUsuario(){
         
         session_start();
         if ($this->rut == "" || $this->nombre == "") {
-            $mensaje = ["msg"=>"complete los campos vacios"];
+            $mensaje = ["msg"=>"Complete los campos vacios"];
             echo json_encode($mensaje);
             return;
         }
@@ -40,7 +39,6 @@ class ControlEditarUsuario{
         $model = new Usuario();
         $id = $this->original;
 
-        //COMPRUEBA SI LA CLAVE SE HA INGRESADO, SI NO SE HA ECHO recupera la original
         if ($this->clave == ""){
             $arr = $model->BuscarUsuario($id);
             $a = $arr[0];
@@ -53,10 +51,10 @@ class ControlEditarUsuario{
         $count = $model->editarUsuario($id,$dataedit);
 
         if ($count == 1) {
-            $mensaje = ["msg"=>"usuario modificado"];
+            $mensaje = ["msg"=>"Usuario modificado con exito"];
             echo json_encode($mensaje); 
         } else {
-            $mensaje = ["msg"=>"hubo un error"];
+            $mensaje = ["msg"=>"ERROR!! intentelo nuevamente"];
             echo json_encode($mensaje);
         }     
     }

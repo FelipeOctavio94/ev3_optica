@@ -19,7 +19,7 @@ class ControlLogin{
     public function inicioSesion(){
         session_start();
         if($this->rut == "" || $this->clave=="") {
-            $_SESSION ['error'] ="Datos no ingresados";
+            $_SESSION ['error'] ="Datos no ingresados, pruebe nuevamente";
             header("Location: ../index.php");
             return;
         }
@@ -30,9 +30,6 @@ class ControlLogin{
             header("Location: ../index.php");
             return;
         }
-
-        
-        //este codigo valida si el usuario es administrador, vendedor u otro y redirecciona respectivamente
 
         $a = $array[0];
         
@@ -46,7 +43,6 @@ class ControlLogin{
                     header("Location: ../view/crearCliente.php");
                     break;
                 default:
-                    //no se que podria ir aqui, quizas un  error o algo
                     $_SESSION ['error'] = "Usuario no encontrado.";
                     header("Location: ../index.php");
                     break;

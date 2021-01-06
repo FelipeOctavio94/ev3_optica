@@ -19,7 +19,6 @@ class ControlUsuario{
         $this->clave  = $_POST['crearClave'];
 
     }
- //crea un usuario por defecto vendedor y por defecto activado, solo necesita
  public function nuevoUsuario(){
     if ($this->rut == "" || $this->nombre == "" || $this->clave == "") {
         $mensaje = ["msg"=>"complete los campos vacios"];
@@ -41,7 +40,6 @@ class ControlUsuario{
             $mensaje = ["msg"=>"hubo un error"];
         echo json_encode($mensaje);
         }
-        
         
     }
 }
