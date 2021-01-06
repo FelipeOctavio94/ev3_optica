@@ -389,12 +389,12 @@
 
                         <div class="card-content">
 
-                            <img src="../img/logoOptica.png" alt="">
+                            <img src="../img/lentes.png" alt="">
 
-                            <h2 class="red-text">Te has equivocado de camino amigo</h2>
-                            <h4 class="black-text">no dispones de accesso para estar aquí</h4>
+                           
+                            <h4 class="black-text">No tienes permisos para estar aquí</h4>
                             <p>Debes iniciar sesión, vuelve al <a href="../index.php">home</a> e inicia sesión.</p>
-                            <p>Creadores de la pagina: <a href="../creadores.html">creadores</a></p>
+                            
 
 
                         </div>
