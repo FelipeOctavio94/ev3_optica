@@ -297,12 +297,12 @@
                             <div class="col l12 m12 s12 center foot-information">
 
 
-                                <img src="../img/logoOptica.png" alt="">
+                                <img src="../img/lentes.png" alt="">
                                 <h6>queremos lo mejor para tus ojos</h6>
-                                <p>Avenida 20 Norte #2434</p>
+                                <p>Avenida siempre viva</p>
                                 <p>contactos:</p>
-                                <p>99 909 909</p>
-                                <p>88 808 808</p>
+                                <p>55 555 555</p>
+                                <p>66 666 666</p>
 
                             </div>
 
