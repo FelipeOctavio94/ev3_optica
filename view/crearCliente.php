@@ -58,7 +58,7 @@
 
                 <div class="col l4 m6 s12 offset-l4 offset-m3">
 
-                    <div class="card">
+                    <div class="card #e0e0e0 grey lighten-2">
 
                         <div class="card-content" id="creacionDeClientes">
 

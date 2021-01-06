@@ -37,7 +37,8 @@
 
 
             <div class="#e0e0e0 grey lighten-2">
-            <h4 class="center black-text">Acceda a su cuenta</h4> 
+                <br>
+            <h4 class="center #455a64 blue-grey-text accent-4">Acceda a su cuenta</h4> 
                         <br> 
 
                     <form action="controllers/ControlLogin.php" method="POST">
@@ -100,6 +101,7 @@
                     <p class="center">
                     <a href="info.php">Informacion de los creadores!!</a>
                     </p>
+                    <br>
                 </div>
 
                 </div>

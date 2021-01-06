@@ -57,14 +57,14 @@
 
 
 
-        <div class="container">
+        <div class="container #e0e0e0 grey lighten-2">
 
 
             <div id="buscarRut" class="card-panel letra-oscura">
 
 
 
-                <div class="margin-top-container">
+                <div class="margin-top-container ">
 
                     <div class="row">
 

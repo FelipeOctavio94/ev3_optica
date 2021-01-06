@@ -58,9 +58,9 @@
 
             <div id="formularioreceta">
 
-                <div class="card-panel letra-oscura">
+                <div class="card-panel ">
 
-                    <div class="row">
+                    <div class="row #e0e0e0 grey lighten-2">
 
                         <div class="col l4 m6 s12 offset-m3">
 
