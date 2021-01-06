@@ -34,9 +34,7 @@ $usuarios = $modelo->cargarUsuarios();
                         <a class="brand-logo"> Bienvenido  </a> <!-- ingresar logo -->
                         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
-                            <li><a href="crearCliente.php">Crear Cliente</a></li>
-                            <li><a href="buscarReceta.php">Buscar Receta</a></li>
-                            <li><a href="ingresarReceta.php">Ingreso</a></li>
+                            <li><a href="gestionUsuario.php">Gestion usuario</a></li>
                             <li><a href="cerrarSesion.php">Salir</a></li>
                         </ul>
                     </div>
@@ -54,9 +52,7 @@ $usuarios = $modelo->cargarUsuarios();
                 </div>
             </li>
             
-            <li><a href="crearCliente.php">Crear Cliente</a></li>
-            <li><a href="buscarReceta.php">Buscar Receta</a></li>
-            <li><a href="ingresarReceta.php">Ingreso</a></li>
+            <li><a href="gestionUsuario.php">Gestion usuario</a></li>
             <li><a href="cerrarSesion.php">Salir</a></li>
         </ul>
 
