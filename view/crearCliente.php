@@ -45,8 +45,7 @@
                     <a ><span class="black-text "><?= $_SESSION['user']['nombre'] ?></span></a>
                 </div>
             </li>
-            
-            <li class="active"><a href="viewAdmin.php">Gestión vendedores</a></li>
+            <li class="active"><a href="crearCliente.php" class="white-text">Crear Cliente</a></li>
             <li><a href="buscarReceta.php">Buscar Receta</a></li>
             <li><a href="ingresarReceta.php">Ingresar Receta</a></li>
             <li><a href="cerrarSesion.php">Salir</a></li>
