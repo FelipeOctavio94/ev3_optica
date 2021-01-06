@@ -42,7 +42,7 @@
                     <form action="controllers/ControlLogin.php" method="POST">
 
 
-                        <div class="card-content">
+                        <div class="#e0e0e0 grey lighten-2">
 
                           
 
