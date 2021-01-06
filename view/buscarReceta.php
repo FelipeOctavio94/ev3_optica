@@ -28,7 +28,7 @@
                         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
                             <li class="active"><a href="viewAdmin.php">Gestión vendedores</a></li>
-                            <li><a href="salir.php">Salir</a></li>
+                            <li><a href="cerrarSesion.php">Salir</a></li>
                         </ul>
                     </div>
         </nav>
@@ -46,9 +46,8 @@
             </li>
             
             <li class="active"><a href="viewAdmin.php">Gestión vendedores</a></li>
-            <li><a href="salir.php">Salir</a></li>
+            <li><a href="cerrarSesion.php">Salir</a></li>
         </ul>
-
 
 
 

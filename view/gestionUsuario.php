@@ -35,7 +35,7 @@ $usuarios = $modelo->cargarUsuarios();
                         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
                             <li class="active"><a href="viewAdmin.php">Gestión vendedores</a></li>
-                            <li><a href="salir.php">Salir</a></li>
+                            <li><a href="cerrarSesion.php">Salir</a></li>
                         </ul>
                     </div>
         </nav>
@@ -53,7 +53,7 @@ $usuarios = $modelo->cargarUsuarios();
             </li>
             
             <li class="active"><a href="viewAdmin.php">Gestión vendedores</a></li>
-            <li><a href="salir.php">Salir</a></li>
+            <li><a href="cerrarSesion.php">Salir</a></li>
         </ul>
 
        
@@ -152,12 +152,12 @@ $usuarios = $modelo->cargarUsuarios();
 
                         <div class="card-content">
 
-                            <img src="../img/logoOptica.png" alt="">
+                            <img src="../img/lentes.png" alt="">
 
-                            <h2 class="red-text">Te has equivocado de camino amigo</h2>
-                            <h4 class="black-text">no dispones de accesso para estar aquí</h4>
+                            
+                            <h4 class="black-text">No tienes permisos para estar aqui</h4>
                             <p>Debes iniciar sesión, vuelve al <a href="../index.php">home</a> e inicia sesión.</p>
-                            <p>Creadores de la pagina: <a href="../creadores.html">creadores</a></p>
+                            
 
 
                         </div>
